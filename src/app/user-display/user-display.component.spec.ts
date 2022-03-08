@@ -1,20 +1,20 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { UnosKorisnikaComponent } from './unos-korisnika.component';
+import { UserDisplayComponent } from './user-display.component';
 
-describe('UnosKorisnikaComponent', () => {
-  let component: UnosKorisnikaComponent;
-  let fixture: ComponentFixture<UnosKorisnikaComponent>;
+describe('UserDisplayComponent', () => {
+  let component: UserDisplayComponent;
+  let fixture: ComponentFixture<UserDisplayComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ UnosKorisnikaComponent ]
+      declarations: [ UserDisplayComponent ]
     })
     .compileComponents();
   });
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(UnosKorisnikaComponent);
+    fixture = TestBed.createComponent(UserDisplayComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });
