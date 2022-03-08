@@ -1,0 +1,19 @@
+<div class="row" >
+    <div class="col-xs-12">
+        <div class="row">
+            <app-unos-korisnika (korisnikDodat)="kadDodamKorisnika($event)"></app-unos-korisnika>
+          </div>
+        <a href="#" class="list-group-item clearfix" *ngFor="let korisnici of korisniciNiz" >
+          <div class="pull-left">
+              <h3 class="list-group-item-heading"> Korisnik: {{korisnici.ime }}</h3>
+              <p class="list-group-item-text">Ima godina: {{korisnici.godine}}</p>
+              <h5 class="list-group-item-text"> 
+                 Rodjen/a dana:  {{korisnici.datumRodjenja}}</h5>
+                </div>
+              <span class="pull-right" >
+                  <img src={{korisnici.picture}} alt=`{{korisnici.ime}}` class="img-responsive">
+              </span>
+        </a>
+    </div>
+  
+</div>

@@ -1,0 +1,25 @@
+<div class="row" style="margin-bottom: 2rem;">
+    <div class="col-xs-12">
+        <form >
+            <div class="row">
+                <h3>Ubacite novog korisnika u listu -</h3>
+           <div class="col-sm-2">
+             <h5>Datum rodjenja: </h5>
+             <input type="date" class="form-control" #datumRodjenja> 
+           </div>
+           <div class="col-sm-2">
+             <h5>Godine: </h5>
+             <input type="number" class="form-control" #godine></div>
+            <div class="col-sm-2">
+                <h5>Ime: </h5>
+                <input type="text" class="form-control " #ime>
+            </div>
+            <div class="col-sm-2">
+                <h5>Link slike: </h5>
+                <input type="text" class="form-control" #linkSlike>
+            </div>
+            <button class="btn btn-primary" style="width:200px;" (click)="onAddItem()">Dodaj korisnika </button>
+            </div>
+        </form>
+    </div>
+</div>
