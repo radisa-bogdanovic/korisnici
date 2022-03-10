@@ -17,11 +17,12 @@ export class InputUserComponent implements OnInit {
   ngOnInit(): void {
   }
 onAddItem(){
+  const id= 0;
   const dayOfBorn= this.dayOfBorn.nativeElement.value;
   const age= this.age.nativeElement.value;
   const name= this.name.nativeElement.value;
   const picLink=this.picLink.nativeElement.value
-  const addedUser= new User(dayOfBorn,age,name,picLink);
+  const addedUser= new User(id, dayOfBorn,age,name,picLink);
   this.userAdded.emit(addedUser)
 }
 }
