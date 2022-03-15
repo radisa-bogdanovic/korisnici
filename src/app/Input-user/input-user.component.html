@@ -1,0 +1,25 @@
+<div class="row" style="margin-bottom: 2rem;">
+    <div class="col-xs-12">
+        <form >
+            <div class="row">
+                <h3>Put the new user in array</h3>
+           <div class="col-sm-2">
+             <h5>Day of born: </h5>
+             <input type="date" class="form-control" #dayOfBorn> 
+           </div>
+           <div class="col-sm-2">
+             <h5>Age: </h5>
+             <input type="number" class="form-control" #age></div>
+            <div class="col-sm-2">
+                <h5>Name: </h5>
+                <input type="text" class="form-control " #name>
+            </div>
+            <div class="col-sm-2">
+                <h5>Link of picture: </h5>
+                <input type="text" class="form-control" #picLink>
+            </div>
+            <button class="btn btn-primary" style="width:200px;" (click)="onAddItem()">Add user </button>
+            </div>
+        </form>
+    </div>
+</div>

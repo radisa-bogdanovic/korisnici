@@ -1,0 +1,25 @@
+import { ComponentFixture, TestBed } from '@angular/core/testing';
+
+import { UnosKorisnikaComponent } from './input-user.component';
+
+describe('UnosKorisnikaComponent', () => {
+  let component: UnosKorisnikaComponent;
+  let fixture: ComponentFixture<UnosKorisnikaComponent>;
+
+  beforeEach(async () => {
+    await TestBed.configureTestingModule({
+      declarations: [ UnosKorisnikaComponent ]
+    })
+    .compileComponents();
+  });
+
+  beforeEach(() => {
+    fixture = TestBed.createComponent(UnosKorisnikaComponent);
+    component = fixture.componentInstance;
+    fixture.detectChanges();
+  });
+
+  it('should create', () => {
+    expect(component).toBeTruthy();
+  });
+});
